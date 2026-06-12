@@ -1,4 +1,7 @@
 Enhanced English Language Calculator
+
+> **Note:** This PR tests CI workflow execution.
+
 A user-friendly calculator application that not only performs mathematical computations but also expresses the results in natural English language. This tool bridges the gap between numerical output and linguistic comprehension.
 Key Features
 Natural Language Output
