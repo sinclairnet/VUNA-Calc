@@ -65,7 +65,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: 22
-          source: "dist/*"
+          source: "./*"
           target: "public_html/"
           strip_components: true
           
