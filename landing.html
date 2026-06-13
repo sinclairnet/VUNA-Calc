@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VUNA Calculator — Math That Speaks Your Language</title>
+  <meta name="description"
+    content="A web-based calculator that performs mathematical computations and displays results in natural English and German language." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/landing.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="brand-icon">V</span>UNA Calc
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto me-3 gap-1">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#examples">Examples</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+        <a href="/calculator" class="btn btn-primary nav-cta">
+          Launch Calculator <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center min-vh-100 pt-5">
+        <div class="col-lg-6 hero-content">
+          <span class="hero-badge reveal">
+            <i class="bi bi-stars me-1"></i> Math + Natural Language
+          </span>
+          <h1 class="hero-title reveal reveal-delay-1">
+            Math that<br />
+            <span class="gradient-text">speaks your language.</span>
+          </h1>
+          <p class="hero-subtitle reveal reveal-delay-2">
+            VUNA Calculator transforms cold numbers into conversational, human-readable output.
+            See your results in English or German — and hear them spoken aloud.
+          </p>
+          <div class="hero-actions reveal reveal-delay-3">
+            <a href="/calculator" class="btn btn-primary btn-lg hero-btn">
+              <i class="bi bi-calculator me-2"></i>Try It Now
+            </a>
+            <a href="#features" class="btn btn-outline-secondary btn-lg hero-btn">
+              Learn More <i class="bi bi-chevron-down ms-1"></i>
+            </a>
+          </div>
+          <div class="hero-stats reveal reveal-delay-4">
+            <div class="stat">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Languages</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Operations</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Calculations</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block">
+          <div class="hero-visual reveal reveal-delay-2">
+            <div class="floating-calc">
+              <div class="calc-display">
+                <span class="calc-expression">7 × 6 =</span>
+                <span class="calc-result">42</span>
+              </div>
+              <div class="calc-words">
+                <span class="calc-label">Result in words</span>
+                <span class="calc-word-result">Seven multiplied by six equals forty-two</span>
+              </div>
+              <div class="calc-dots">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <a href="#features" class="scroll-link">
+        <span>Scroll</span>
+        <i class="bi bi-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-badge">Features</span>
+        <h2 class="section-title">Everything you need,<br />nothing you don't.</h2>
+        <p class="section-subtitle">A thoughtfully designed calculator that puts natural language at the center of every interaction.</p>
+      </div>
+      <div class="row g-4 mt-4">
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="feature-card">
+            <div class="feature-icon icon-blue">
+              <i class="bi bi-chat-quote"></i>
+            </div>
+            <h3>Natural Language Output</h3>
+            <p>Every result is automatically converted into readable words. "42" becomes "Forty-two" — making math more accessible.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-1">
+          <div class="feature-card">
+            <div class="feature-icon icon-purple">
+              <i class="bi bi-translate"></i>
+            </div>
+            <h3>Multi-Language Support</h3>
+            <p>Switch between English and German with a single click. Results adapt instantly to your chosen language.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-2">
+          <div class="feature-card">
+            <div class="feature-icon icon-green">
+              <i class="bi bi-volume-up"></i>
+            </div>
+            <h3>Text-to-Speech</h3>
+            <p>Hear your results spoken aloud with proper pronunciation in the selected language. Great for accessibility.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="feature-card">
+            <div class="feature-icon icon-orange">
+              <i class="bi bi-clock-history"></i>
+            </div>
+            <h3>Calculation History</h3>
+            <p>Every calculation is saved locally. Review, annotate with remarks, and revisit your work anytime.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-1">
+          <div class="feature-card">
+            <div class="feature-icon icon-red">
+              <i class="bi bi-keyboard"></i>
+            </div>
+            <h3>Keyboard Support</h3>
+            <p>Type numbers and operators directly from your keyboard. Enter to calculate, Escape to clear — it just works.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-2">
+          <div class="feature-card">
+            <div class="feature-icon icon-teal">
+              <i class="bi bi-phone"></i>
+            </div>
+            <h3>Fully Responsive</h3>
+            <p>Beautiful on desktop, tablet, and mobile. The interface adapts seamlessly to any screen size.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-badge">How It Works</span>
+        <h2 class="section-title">Simple as 1, 2, 3.</h2>
+        <p class="section-subtitle">No setup, no downloads, no accounts. Just open and calculate.</p>
+      </div>
+      <div class="row g-5 mt-4 align-items-start">
+        <div class="col-lg-4 reveal">
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <div class="step-icon"><i class="bi bi-1-circle"></i></div>
+            <h3>Enter Your Expression</h3>
+            <p>Click buttons or type on your keyboard. Build any expression using +, −, ×, ÷ and decimal numbers.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal reveal-delay-1">
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <div class="step-icon"><i class="bi bi-2-circle"></i></div>
+            <h3>Get Your Result</h3>
+            <p>Press "=" and instantly see the numeric answer alongside its natural language equivalent.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal reveal-delay-2">
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <div class="step-icon"><i class="bi bi-3-circle"></i></div>
+            <h3>Hear & Explore</h3>
+            <p>Listen to the result spoken aloud, switch languages, or add remarks to your calculation history.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section class="examples-section" id="examples">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-badge">Examples</span>
+        <h2 class="section-title">See it in action.</h2>
+        <p class="section-subtitle">Here's how VUNA Calculator translates your math into words.</p>
+      </div>
+      <div class="examples-grid mt-5">
+        <div class="example-card reveal">
+          <div class="example-expression">
+            <span class="example-num">5</span>
+            <span class="example-op">+</span>
+            <span class="example-num">3</span>
+            <span class="example-equals">=</span>
+            <span class="example-result">8</span>
+          </div>
+          <div class="example-divider"></div>
+          <div class="example-words">"Five plus three equals eight"</div>
+        </div>
+        <div class="example-card reveal reveal-delay-1">
+          <div class="example-expression">
+            <span class="example-num">12</span>
+            <span class="example-op">÷</span>
+            <span class="example-num">4</span>
+            <span class="example-equals">=</span>
+            <span class="example-result">3</span>
+          </div>
+          <div class="example-divider"></div>
+          <div class="example-words">"Twelve divided by four equals three"</div>
+        </div>
+        <div class="example-card reveal reveal-delay-2">
+          <div class="example-expression">
+            <span class="example-num">7</span>
+            <span class="example-op">×</span>
+            <span class="example-num">6</span>
+            <span class="example-equals">=</span>
+            <span class="example-result">42</span>
+          </div>
+          <div class="example-divider"></div>
+          <div class="example-words">"Seven multiplied by six equals forty-two"</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / CTA Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-card reveal">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <span class="section-badge">About</span>
+            <h2 class="section-title mt-3">Built by students,<br />for everyone.</h2>
+            <p class="about-text">
+              VUNA Calculator was created by <strong>Group 2</strong> of the 2025/26 Software Engineering class
+              as part of SEN 482. It demonstrates how a simple tool can bridge the gap between numerical output
+              and linguistic comprehension — making mathematics more accessible and human.
+            </p>
+            <p class="about-text">
+              The project is open-source and built with vanilla JavaScript, HTML5, CSS3, and Bootstrap 5.
+              No frameworks, no build steps — just clean, readable code.
+            </p>
+          </div>
+          <div class="col-lg-5 text-center mt-4 mt-lg-0">
+            <div class="cta-box">
+              <h3>Ready to try it?</h3>
+              <p>No installation needed. Open in your browser and start calculating.</p>
+              <a href="/calculator" class="btn btn-primary btn-lg w-100">
+                <i class="bi bi-calculator me-2"></i>Launch Calculator
+              </a>
+              <a href="https://github.com/Olivia-Anigbogu/VUNA-Calc" target="_blank" rel="noopener"
+                class="btn btn-outline-secondary btn-lg w-100 mt-3">
+                <i class="bi bi-github me-2"></i>View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="footer-brand"><span class="brand-icon-sm">V</span>UNA Calculator</p>
+          <p class="footer-text">Math that speaks your language.</p>
+        </div>
+        <div class="col-md-6 text-md-end mt-3 mt-md-0">
+          <p class="footer-text mb-1">Created by Group 2 &mdash; SEN 482 Software Engineering</p>
+          <p class="footer-text mb-0">
+            <a href="https://github.com/Olivia-Anigbogu/VUNA-Calc" target="_blank" rel="noopener">
+              <i class="bi bi-github me-1"></i>GitHub
+            </a>
+            <span class="mx-2">·</span>
+            <a href="/calculator">Calculator</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/landing.js"></script>
+</body>
+
+</html>
