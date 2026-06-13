@@ -53,8 +53,8 @@ jobs:
     if: github.event_name == 'push'
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      # - name: Checkout code
+        # uses: actions/checkout@v4
       # - name: Download a Build Artifact
       #   uses: actions/download-artifact@v8.0.1
       #   with:
@@ -68,7 +68,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: 22
-          source: './*'
+          source: '*'
           target: 'public_html/'
           strip_components: true
           
