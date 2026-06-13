@@ -56,14 +56,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Download a Build Artifact
-        uses: actions/download-artifact@v3.1.0
+        uses: actions/download-artifact@v8.0.1
         with:
           # Artifact name
           name: 'build-artifact'
           # Destination path
           path: dist/
       - name: Deploy to Production
-        uses: appleboy/ssh-action@v.0.1.7
+        uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
